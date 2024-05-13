@@ -12,4 +12,4 @@ Upcoming, I am going to implement additional features such as editing and deleti
 
 ## Demo
 
-[Click here to try out the product manager live!](https://easy-calc-js.netlify.app/)
+[Click here to try out the product manager live!](https://js-product-manager.netlify.app/)
