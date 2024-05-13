@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Products List</title>
+</head>
+<body class="text-center">
+    <section class="bg-warning-subtle p-5">
+        <h1>Product Form</h1>
+        <p >Write the products details in the inputs and add product to the Products List.</p>
+        <div class="input-group mb-3 w-50 container text-center">
+            <span class="input-group-text">👕</span>
+            <input type="text" data-product-name class="form-control" placeholder="Name" aria-label="product-name" name="product-name">
+        </div>
+        <div class="input-group mb-3 w-50 container text-center">
+            <span class="input-group-text">📦</span>
+            <input type="text" data-product-stock class="form-control" placeholder="Stock" aria-label="product-stock" name="product-stock">
+        </div>
+        <div class="input-group mb-3 w-50 container text-center">
+            <span class="input-group-text">🧰</span>
+            <input type="text" data-product-buy-price class="form-control" placeholder="Buy Price" aria-label="product-buy-price" name="product-buy-price">
+        </div>
+        <div class="input-group mb-3 w-50 container text-center">
+            <span class="input-group-text">🛒</span>
+            <input type="text" data-product-sale-price class="form-control" placeholder="Sale Price" aria-label="product-sale-price" name="product-sale-price">
+        </div>
+        <div class="input-group mb-3 w-25 container text-center d-flex justify-content-center">
+            <button class="btn btn-primary" type="submit" data-btn-add-product >Add Product</button>
+        </div>
+    </section>
+    <section id="product-list" class="bg-info-subtle p-5">
+        <h1>Products List</h1>
+        <p>You could view your added products in this section.</p>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
