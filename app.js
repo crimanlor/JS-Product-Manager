@@ -42,15 +42,13 @@ class Product {
     }
 }
 
+const productNameElement = document.querySelector("[data-product-name]")
+const stockElement = document.querySelector("[data-product-stock]")
+const buyPriceElement = document.querySelector("[data-product-buy-price]")
+const salePriceElement = document.querySelector("[data-product-sale-price]")
 const addBtn = document.querySelector("[data-btn-add-product]")
 
 addBtn.addEventListener("click", () => {
-    const productNameElement = document.querySelector("[data-product-name]")
-    const stockElement = document.querySelector("[data-product-stock]")
-    const buyPriceElement = document.querySelector("[data-product-buy-price]")
-    const salePriceElement = document.querySelector("[data-product-sale-price]")
-
     const product = new Product(productNameElement, stockElement, buyPriceElement, salePriceElement);
-
     product.addProduct(productNameElement.value, stockElement.value, buyPriceElement.value, salePriceElement.value)
 })
