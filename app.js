@@ -59,6 +59,11 @@ class Product {
         this.products.sort((a,b)=> a.productName.localeCompare(b.productName))
         this.renderProducts()
     }
+
+    sortStockProducts(){
+        this.products.sort((a, b) => a.stock - b.stock )
+        this.renderProducts()
+    }
 }
 
 const productNameElement = document.querySelector("[data-product-name]")
@@ -67,6 +72,7 @@ const buyPriceElement = document.querySelector("[data-product-buy-price]")
 const salePriceElement = document.querySelector("[data-product-sale-price]")
 const addBtn = document.querySelector("[data-btn-add-product]")
 const orderNameBtn = document.querySelector("[data-btn-order-by-name]")
+const orderStockBtn = document.querySelector("[data-btn-order-by-stock]")
 
 const product = new Product(productNameElement, stockElement, buyPriceElement, salePriceElement);
 
@@ -76,4 +82,8 @@ addBtn.addEventListener("click", () => {
 
 orderNameBtn.addEventListener("click", () => {
     product.sortProducts();
+})
+
+orderStockBtn.addEventListener("click", () => {
+    product.sortStockProducts();
 })
