@@ -37,7 +37,7 @@ class Product {
 
     showProduct(product){
         const productCard = document.createElement('div')
-        productCard.classList.add('card')
+        productCard.classList.add('card', 'm-2')
         productCard.innerHTML = `
         <div class="card-body">
             <h5 class="card-title">${product.productName}</h5>
